@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Sadə Kalkulyator</title>
+</head>
+<body>
+
+    <input type="number"
+           id="firstNumber"
+           placeholder="Birinci ədəd">
+
+    <input type="number"
+           id="secondNumber"
+           placeholder="İkinci ədəd">
+
+    <br><br>
+
+    <button onclick="topla()">
+        +
+    </button>
+
+    <button onclick="cix()">
+        -
+    </button>
+
+    <h2 id="result">
+        Nəticə:
+    </h2>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+
+function topla() {
+
+    let number1 =
+        Number(document.getElementById("firstNumber").value);
+
+    let number2 =
+        Number(document.getElementById("secondNumber").value);
+
+    let answer = number1 + number2;
+
+    document.getElementById("result").innerText =
+        "Nəticə: " + answer;
+}
+
+
+
+function cix() {
+
+    let number1 =
+        Number(document.getElementById("firstNumber").value);
+
+    let number2 =
+        Number(document.getElementById("secondNumber").value);
+
+    let answer = number1 - number2;
+
+    document.getElementById("result").innerText =
+        "Nəticə: " + answer;
+}
