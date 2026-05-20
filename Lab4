@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <title>Faktorial</title>
+</head>
+<body>
+
+    <h1 id="result"></h1>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+
+let number = 8;
+
+let factorial = 1;
+
+
+for(let i = 1; i <= number; i++) {
+
+    factorial = factorial * i;
+}
+
+
+document.getElementById("result").innerText =
+    "8! = " + factorial;
