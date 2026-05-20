@@ -2,21 +2,35 @@
 <html lang="az">
 <head>
     <meta charset="UTF-8">
-    <title>Tapşırıq 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Mətn Göstərmə</title>
 </head>
 <body>
 
-    <input type="text" id="textInput" placeholder="Mətn yazın">
-    <button onclick="showText()">Göstər</button>
+    <input type="text"
+           id="userText"
+           placeholder="Buraya nəsə yaz">
 
-    <p id="result"></p>
+    <button onclick="showMessage()">
+        Göstər
+    </button>
 
-    <script>
-        function showText() {
-            let text = document.getElementById("textInput").value;
-            document.getElementById("result").innerText = text;
-        }
-    </script>
+    <p id="textArea"></p>
+
+
+    <script src="script.js"></script>
 
 </body>
 </html>
+
+
+
+function showMessage() {
+
+    const writtenText =
+        document.getElementById("userText").value;
+
+    document.getElementById("textArea").innerText =
+        writtenText;
+}
