@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sayğac Tətbiqi</title>
+</head>
+<body>
+
+    <h1 id="counter">
+        0
+    </h1>
+
+    <button onclick="increaseNumber()">
+        Artır
+    </button>
+
+    <button onclick="decreaseNumber()">
+        Azalt
+    </button>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+let count = 0;
+
+
+function increaseNumber() {
+
+    count = count + 1;
+
+    document.getElementById("counter").innerText =
+        count;
+}
+
+
+
+function decreaseNumber() {
+
+    count = count - 1;
+
+    document.getElementById("counter").innerText =
+        count;
+}
